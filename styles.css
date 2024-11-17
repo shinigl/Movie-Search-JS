@@ -1,0 +1,128 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+   
+}
+
+/* Body */
+body {
+    padding: 20px;
+    text-align: center;
+    background: url(Movie-bg.jpg);
+    background-size: cover;
+    background-position: center right;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+/* Header Styling */
+h1 {
+    color: #fff;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+/* Search Bar Section */
+#searchInput {
+    width: 60%;
+    padding: 18px;
+    border: 2px solid #333;
+    border-radius: 30px;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+#searchInput:focus {
+    border-color: #1a73e8;
+    box-shadow: 0 0 10px rgba(26, 115, 232, 0.2);
+}
+
+#searchBtn {
+    padding: 12px 20px;
+    background-color: #1a73e8;
+    color: white;
+    font-size: 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-left: 10px;
+}
+
+#searchBtn:hover {
+    background-color: #0c58b4;
+}
+
+/* Movie Grid Container */
+#results {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px 0;
+}
+
+/* Movie Card Styling */
+#movieCon {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    height: 340px; 
+}
+
+#movieCon:hover {
+    transform: scale(1.05);
+}
+
+/* Movie Poster */
+#movieCon img {
+    width: 100%;
+    height: 220px; /* Reduced poster height */
+    object-fit: cover;
+    border-bottom: 2px solid #f4f4f4;
+}
+
+/* Movie Title and Year */
+#movieCon h2 {
+    font-size: 1rem;
+    margin: 10px 0;
+    color: #333;
+}
+
+#movieCon p {
+    color: #777;
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+
+.error{
+    font-size: 2rem;
+    color: #fff;
+
+}
+
+/* Load More Button Styling */
+#load {
+    padding: 10px 20px;
+    background-color: #1a73e8;
+    color: white;
+    font-size: 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    display: block;
+    margin: 20px auto;
+    position: relative;
+}
+
+#load:hover {
+    background-color: #0c58b4;
+}
+
