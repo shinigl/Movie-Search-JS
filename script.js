@@ -34,7 +34,7 @@ searchBar.addEventListener('keyup', () => {
 // Fetching OMDB API with pagination support
 async function getMovies(movieName, currentPage) {
     try {
-        let response = await fetch(`http://www.omdbapi.com/?i=tt3896198&apikey=37f749f4&s=${movieName}&page=${currentPage}`);
+        let response = await fetch(`https://www.omdbapi.com/?i=tt3896198&apikey=37f749f4&s=${movieName}&page=${currentPage}`);
         let data = await response.json();
         console.log(data);
         // Check if data.Response is 'True'
